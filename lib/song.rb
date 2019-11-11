@@ -7,7 +7,6 @@ class Song
   prepend Memorable::InstanceMethods
   include Paramable::InstanceMethods
   
-
   @@songs = []
 
   def self.all
