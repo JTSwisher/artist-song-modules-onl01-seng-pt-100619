@@ -16,7 +16,6 @@ class Artist
     @@artists.detect{|a| a.name == name}
   end
 
-
   def self.count
     self.all.count
   end
