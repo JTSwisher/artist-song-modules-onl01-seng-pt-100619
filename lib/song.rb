@@ -12,10 +12,12 @@ class Song
   def self.all
     @@songs
   end
+  
   def artist=(artist)
     @artist = artist
     artist.add_song(self) unless artist.songs.include?(self)
   end
+  
   def to_param
     name.downcase.gsub(' ', '-')
   end
